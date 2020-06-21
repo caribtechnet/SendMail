@@ -5,6 +5,8 @@ open System.Net;
 open System.Net.Mail;
 open System.Net.Mime;
 
+//You can update this code into a commandline tool
+
 [<EntryPoint>]
 let main argv =    
     try
