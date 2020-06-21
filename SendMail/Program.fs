@@ -5,9 +5,12 @@ open System.Net;
 open System.Net.Mail;
 open System.Net.Mime;
 
+//You can update this code into a commandline tool
+
 [<EntryPoint>]
 let main argv =    
     try
+
         let mySmtpClient = new SmtpClient("smtp.gmail.com")
         mySmtpClient.EnableSsl <- true
         mySmtpClient.Host<- "smtp.gmail.com"
