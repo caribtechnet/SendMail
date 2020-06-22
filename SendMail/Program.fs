@@ -10,6 +10,7 @@ open System.Net.Mime;
 [<EntryPoint>]
 let main argv =    
     try
+
         let mySmtpClient = new SmtpClient("smtp.gmail.com")
         mySmtpClient.EnableSsl <- true
         mySmtpClient.Host<- "smtp.gmail.com"
